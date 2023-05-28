@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAMES</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="Main.html"><img src="Pics/Symbol.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-cloud" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="Main.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Games.html">GAMES</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Info.html">SURVEY</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Games</h1>
+    </section>
+
+    <!-------games--------->
+
+    <section class="games">
+      <h1>Materials used in playing Dungeons and Dragons</h1>
+      <p>HANDBOOK | CHARACTER SHEET | DICE</p>
+
+      <div class="row">
+        <div class="games-col">
+          <img src="Pics/HBS.jpeg" alt="" />
+          <h3>HANDBOOKS</h3>
+          <p>
+            The Player's Handbook is the essential reference for every Dungeons & Dragons roleplayer. 
+			It contains rules for character creation and advancement, backgrounds and skills, exploration and combat, equipment, spells, and much more.
+          </p>
+        </div>
+        <div class="games-col">
+          <img src="Pics/Sheets.png" alt="" />
+          <h3>CHARACTER SHEETS</h3>
+          <p>
+            A character sheet is a record of a player character in a role-playing game, including whatever details, notes, game statistics, 
+			and background information a player would need during a play session.
+          </p>
+        </div>
+        <div class="games-col">
+          <img src="Pics/Dice.jpg" alt="" />
+          <h3>DICE</h3>
+          <p>
+            Polyhedral Dice (4-, 6-, 8-, 10-, 12, and 20-sided; some people also use a 100-sided die)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!------about------->
+
+    <section class="about">
+      <h1>My top 3 handpicked modules that are good for beginners</h1>
+      <p>Lost Mines of Phandelver | Ghosts Of The Saltmarsh | Waterdeep: Dragon Heist</p>
+      <p>
+        You can hover your mouse in order to be more informed to the title of
+        the handbooks.
+      </p>
+
+      <div class="row">
+        <div class="about-col">
+          <img src="Pics/LMOP.jpg" alt="" />
+          <div class="layer">
+            <h3>Lost Mines of Phandelver</h3>
+          </div>
+        </div>
+        <div class="about-col">
+          <img src="Pics/GoS.jpg" alt="" />
+          <div class="layer">
+            <h3>Ghosts Of The Saltmarsh</h3>
+          </div>
+        </div>
+        <div class="about-col">
+          <img src="Pics/WDDH.jpg" alt="" />
+          <div class="layer">
+            <h3>Waterdeep: Dragon Heist</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---footer---->
+
+    <section class="footer">
+      <h4>About Me</h4>
+      <p>Web Design Principles</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+      </div>
+      <p>| Gabriel G. Sumabat |</p>
+    </section>
+
+    <!---------Javascript for toggle menu------------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

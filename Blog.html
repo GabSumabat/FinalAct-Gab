@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLOG</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="Main.html"><img src="Pics/Symbol.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-cloud" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="Main.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Games.html">GAMES</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="Info.html">SURVEY</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Blog</h1>
+    </section>
+
+    <!-----------blog--------->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="images/laptop1.jpg" alt="" />
+          <h2>WHAT MAKES DND 5E GREAT?</h2>
+          <p>
+            Roleplaying games like D&D are a great way to test your creative abilities and learn to think on your feet. 
+			Dungeons & Dragons is all about exploration and adventure, and you'll be regularly surprised by what happens to your character.
+          </p>
+		  <Br>
+          <p>
+            A study of primary school children suggests that even when played using online tools during the recent pandemic, 
+			D&D helps to develop important life skills in language and communication, 
+			perspective-taking, self-awareness, empathy, creativity, critical thinking and problem solving.
+          </p>
+
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your Comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                Post Comment
+              </button>
+            </form>
+          </div>
+        </div>
+		
+		    <div class="blog-right">
+          <h3>Starting Adventures for DnD 5e</h3>
+          <div>
+            <span>First:</span>
+            <span>Lost Mine Of Phandelver</span>
+          </div>
+          <div>
+            <span>Second:</span>
+            <span>The Wild Sheep Chase</span>
+          </div>
+          <div>
+            <span>Third:</span>
+            <span>Baldur's Gate: Descent Into Avernus</span>
+          </div>
+          <div>
+            <span>Fourth:</span>
+            <span>Ghosts Of The Saltmarsh</span>
+          </div>
+          <div>
+            <span>Fifth:</span>
+            <span>Waterdeep: Dragon Heist</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---footer---->
+
+    <section class="footer">
+      <h4>About Me</h4>
+      <p>Web Design Principles</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+      </div>
+      <p>| Gabriel G. Sumabat |</p>
+    </section>
+
+    <!---------Javascript for toggle menu------------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
